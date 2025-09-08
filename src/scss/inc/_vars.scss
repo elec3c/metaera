@@ -1,0 +1,84 @@
+:root {
+    --color-white: #fff;
+    --primary: #2e2e48;
+    --primary-foreground: #fff;
+    --secondary: #b6d1df;
+    --secondary-foreground: #2e2e48;
+    --muted: #f8f9fa;
+    --muted-foreground: #6c757d;
+    --accent: #f07d29;
+    --accent-foreground: #fff;
+    --accent-hover: #e06b18;
+    --accent-dark: #d15a0a;
+    --accent-light: #fdf3e7;
+    --accent-secondary: #b6d1df;
+    --accent-secondary-dark: #a0c3d2;
+    --accent-secondary-light: #e8f4f8;
+
+    --color-red-500: oklch(.637 .237 25.331);
+    --color-orange-500: oklch(.705 .213 47.604);
+    --color-green-500: oklch(.723 .219 149.579);
+    --color-green-600: oklch(.627 .194 149.214);
+    --color-blue-500: oklch(.623 .214 259.815);
+    --color-purple-500: oklch(.627 .265 303.9);
+    --color-gray-100: oklch(.967 .003 264.542);
+    --color-gray-400: oklch(.707 .022 261.325);
+
+    --spacing: .25rem;
+    --radius: .75rem;
+    --radius-xs: .125rem;
+    --radius-2xl: 1rem;
+}
+
+$font: 'Montserrat', -apple-system, sans-serif;
+
+$bg-body: #FFF;
+$bg-gray-light: #F8FAFC;
+
+$color-body: var(--primary);
+$color-accent: var(--accent);
+$color-accent-hover: var(--accent-hover);
+$color-accent-dark: var(--accent-dark);
+
+$fs-xs: .75rem;
+$fs-xs--line-height: calc(1 / .75);
+$fs-sm: .875rem;
+$fs-sm--line-height: calc(1.25 / .875);
+$fs-base: 1rem;
+$fs-base--line-height: calc(1.5 / 1);
+$fs-lg: 1.125rem;
+$fs-lg--line-height: calc(1.75 / 1.125);
+$fs-xl: 1.25rem;
+$fs-xl--line-height: calc(1.75 / 1.25);
+$fs-2xl: 1.5rem;
+$fs-2xl--line-height: calc(2 / 1.5);
+$fs-3xl: 1.875rem;
+$fs-3xl--line-height: calc(2.25 / 1.875);
+$fs-4xl: 2.25rem;
+$fs-4xl--line-height: calc(2.5 / 2.25);
+$fs-5xl: 3rem;
+$fs-5xl--line-height: 1;
+$fs-6xl: 3.75rem;
+$fs-6xl--line-height: 1;
+$fs-7xl: 4.5rem;
+$fs-7xl--line-height: 1;
+
+
+
+$width-container: 1280px;
+$pd-container: 16px;
+$pd-container-smx: 15px;
+
+$md-desktop-lg: 1699.98px;
+$md-desktop-md: 1289.98px;
+$md-desktop: 1199.98px;
+$md-tablet: 1023.98px;
+$md-tablet-sm: 767.98px;
+$md-mobile-lg: 639.98px;
+$md-mobile: 479.98px;
+$md-mobile-sm: 399.98px;
+$md-mobile-smx: 360px;
+
+$header-h: 100px;
+$header-h-t: 80px;
+$header-h-m: 70px;

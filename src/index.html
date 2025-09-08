@@ -1,0 +1,962 @@
+@@include('html/head.html', {
+    "title": "Современный сайт для ООО МетаЭра"
+})
+
+<div class="wrapper" id="top">
+
+    @@include('html/header.html', {
+        "page": "main"
+    })
+    
+    <main class="content__wrapper">
+        <section class="hero">
+            <div class="container">	
+               <div class="hero__cols">
+                    <div class="hero__left">
+                        <div class="hero__tag section__tag">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path></svg>
+                            <span>Сертифицированное ЭДО</span>
+                        </div>
+                        <h1 class="hero__title">Цифровая экосистема <span class="text-accent">для вашего бизнеса</span></h1>
+                        <div class="hero__advants swiper js-hero-adv-slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide hero__advants-item">Простая интеграция за 5 минут без IT-отдела</div>
+                                <div class="swiper-slide hero__advants-item">Экономия до 80% времени на документообороте</div>
+                                <div class="swiper-slide hero__advants-item">Полная цифровая экосистема за 1 день</div>
+                            </div>
+                        </div>
+
+                        <div class="hero__props shadow-lg">
+                            <div class="hero__prop prop--bg">
+                                <div class="hero__prop-icon"><img src="@img/icons/gift.svg" alt=""></div>
+                                <div class="hero__prop-t">3 месяца бесплатно при переходе от конкурентов &nbsp; ⚡</div>
+                            </div>
+                            <div class="hero__prop">
+                                <div class="hero__prop-icon"><img src="@img/icons/lighting.svg" alt=""></div>
+                                <div class="hero__prop-t">Старт за 24 часа без предоплаты</div>
+                            </div>
+                            <div class="hero__prop">
+                                <div class="hero__prop-icon"><img src="@img/icons/phone.svg" alt=""></div>
+                                <div class="hero__prop-t">Бесплатная консультация за 15 минут</div>
+                            </div>
+                        </div>
+
+                        <div class="hero__buttons">
+                            <button class="btn btn--md btn--wall rounded cta-pulse" data-scroll="contacts">Начать бесплатно <img src="@img/icons/arrow.svg" alt=""></button>
+                            <a href="tel:+375 (29) 123-45-67" class="btn btn--green btn--md btn--wall rounded"><img src="@img/icons/phone.svg" alt=""> Позвонить сейчас</a>
+                        </div>
+                        <div class="hero__rating">
+                            <div class="hero__rating-stars rating">
+                                <span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span>
+                                <div class="rating__val">4.9/5</div>
+                            </div>
+                            <div class="hero__rating-comm">500+ довольных клиентов</div>
+                        </div>
+                    </div>
+
+                    <div class="hero__docs backdrop-blur-sm shadow-2xl">
+                        <div class="hero__docs-head">
+                            <div class="hero__docs-logo shadow-lg"><img src="@img/logo.png" alt=""></div>
+                            <div class="hero__docs-info">
+                                <div class="hero__docs-title">ЭДО МетаЭра</div>
+                                <div class="hero__docs-subtitle">Система документооборота</div>
+                            </div>
+                        </div>
+                        <div class="hero__docs-progress">
+                            <div class="hero__docs-progress__head">
+                                <div class="hero__docs-progress__title">Документы обработаны</div>
+                                <div class="hero__docs-progress__val js-counter-1"  data-counter-min="1" 
+                                    data-counter-max="124773" 
+                                    data-counter-speed="2" 
+                                    data-counter-increment="1110" 
+                                    data-counter-delay="0"></div>
+                                <div class="hero__docs-progress__percent"><span class="js-counter-2" data-counter-min="1" 
+                                    data-counter-max="95" 
+                                    data-counter-speed="15" 
+                                    data-counter-increment="1" 
+                                    data-counter-delay="0"></span>%</div>
+                            </div>
+                            <div class="hero__docs-progress__line shadow-inner">
+                                <div class="" style="width: 95%;"></div>
+                            </div>
+                        </div>
+                        <div class="hero__docs-props">
+                            <div class="hero__docs-prop">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#f07d29" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><path d="M16 3.128a4 4 0 0 1 0 7.744"></path><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><circle cx="9" cy="7" r="4"></circle></svg>
+                                <div class="hero__docs-prop__val">500+</div>
+                                <div class="hero__docs-prop__text">Довольных клиентов</div>
+                            </div>
+                            <div class="hero__docs-prop">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#f07d29" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path></svg>
+                                <div class="hero__docs-prop__val">99.9%</div>
+                                <div class="hero__docs-prop__text">Время работы</div>
+                            </div>
+                            <div class="hero__docs-prop">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#f07d29" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  aria-hidden="true"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path></svg>
+                                <div class="hero__docs-prop__val">24/7</div>
+                                <div class="hero__docs-prop__text">Поддержка</div>
+                            </div>
+                        </div>
+
+                        <div class="hero__docs-circle-1 shadow-lg"></div>
+                        <div class="hero__docs-circle-2 shadow-lg"></div>
+                        <div class="hero__docs-circle-3 shadow-lg"></div>
+                    </div>
+               </div>
+            </div>	
+        </section><!--hero-->
+
+        
+        <section class="solutions section__mg" id="solutions">
+            <div class="container">	
+                <div class="section__head text--center">
+                    <h2 class="section__title">Комплексные решения для бизнеса</h2>
+                    <div class="section__intro">Полная экосистема цифровых инструментов, которая поможет автоматизировать все процессы вашей компании</div>
+                </div>
+
+                <div class="solutions__items">
+                    <div class="solutions__item backdrop-blur-sm shadow-xl">
+                        <div class="solutions__item-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  aria-hidden="true"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path><path d="M14 2v4a2 2 0 0 0 2 2h4"></path><path d="M10 9H8"></path><path d="M16 13H8"></path><path d="M16 17H8"></path></svg>
+                        </div>
+                        <div class="solutions__item-title">Электронный документооборот</div>
+                        <div class="solutions__item-intro">Полноценная система ЭДО с юридической значимостью</div>
+                        <div class="solutions__item-list">
+                            <ul>
+                                <li>Подписание документов</li>
+                                <li>Архивное хранение</li>
+                                <li>Интеграция с 1С</li>
+                            </ul>
+                        </div>
+                        <div class="solutions__item-buttons">
+                            <button class="btn btn--bd btn--wall">Подробнее</button>
+                        </div>
+                    </div>
+                    <div class="solutions__item backdrop-blur-sm shadow-xl">
+                        <div class="solutions__item-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><path d="M16 3.128a4 4 0 0 1 0 7.744"></path><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><circle cx="9" cy="7" r="4"></circle></svg>
+                        </div>
+                        <div class="solutions__item-title">Модуль Клиент-Бухгалтер</div>
+                        <div class="solutions__item-intro">Управление оборота документов с подрядным бухгалтером</div>
+                        <div class="solutions__item-list">
+                            <ul>
+                                <li>Документооборот с бухгалтером</li>
+                                <li>Контроль статусов</li>
+                                <li>Уведомления</li>
+                            </ul>
+                        </div>
+                        <div class="solutions__item-buttons">
+                            <button class="btn btn--bd btn--wall">Подробнее</button>
+                        </div>
+                    </div>
+                    <div class="solutions__item backdrop-blur-sm shadow-xl">
+                        <div class="solutions__item-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  aria-hidden="true"><path d="M9.671 4.136a2.34 2.34 0 0 1 4.659 0 2.34 2.34 0 0 0 3.319 1.915 2.34 2.34 0 0 1 2.33 4.033 2.34 2.34 0 0 0 0 3.831 2.34 2.34 0 0 1-2.33 4.033 2.34 2.34 0 0 0-3.319 1.915 2.34 2.34 0 0 1-4.659 0 2.34 2.34 0 0 0-3.32-1.915 2.34 2.34 0 0 1-2.33-4.033 2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                        </div>
+                        <div class="solutions__item-title">API интеграции</div>
+                        <div class="solutions__item-intro">Подключение к внешним системам и сервисам</div>
+                        <div class="solutions__item-list">
+                            <ul>
+                                <li>REST API</li>
+                                <li>Webhooks</li>
+                                <li>Готовые модули</li>
+                            </ul>
+                        </div>
+                        <div class="solutions__item-buttons">
+                            <button class="btn btn--bd btn--wall">Подробнее</button>
+                        </div>
+                    </div>
+                    <div class="solutions__item backdrop-blur-sm shadow-xl">
+                        <div class="solutions__item-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path></svg>
+                        </div>
+                        <div class="solutions__item-title">Информационная безопасность</div>
+                        <div class="solutions__item-intro">Защита данных на уровне банковских стандартов</div>
+                        <div class="solutions__item-list">
+                            <ul>
+                                <li>Шифрование</li>
+                                <li>Аудит действий</li>
+                                <li>Backup</li>
+                            </ul>
+                        </div>
+                        <div class="solutions__item-buttons">
+                            <button class="btn btn--bd btn--wall">Подробнее</button>
+                        </div>
+                    </div>
+                    <div class="solutions__item backdrop-blur-sm shadow-xl">
+                        <div class="solutions__item-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  aria-hidden="true"><path d="M3 3v16a2 2 0 0 0 2 2h16"></path><path d="M18 17V9"></path><path d="M13 17V5"></path><path d="M8 17v-3"></path></svg>
+                        </div>
+                        <div class="solutions__item-title">Аналитика и отчеты</div>
+                        <div class="solutions__item-intro">Детальная аналитика по всем процессам компании</div>
+                        <div class="solutions__item-list">
+                            <ul>
+                                <li>Дашборды</li>
+                                <li>Автоотчеты</li>
+                                <li>Экспорт данных</li>
+                            </ul>
+                        </div>
+                        <div class="solutions__item-buttons">
+                            <button class="btn btn--bd btn--wall">Подробнее</button>
+                        </div>
+                    </div>
+                    <div class="solutions__item backdrop-blur-sm shadow-xl">
+                        <div class="solutions__item-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  aria-hidden="true"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"></rect><path d="M12 18h.01"></path></svg>
+                        </div>
+                        <div class="solutions__item-title">Мобильное приложение</div>
+                        <div class="solutions__item-intro">Доступ к системе с любого устройства</div>
+                        <div class="solutions__item-list">
+                            <ul>
+                                <li>iOS/Android</li>
+                                <li>Офлайн режим</li>
+                                <li>Push уведомления</li>
+                            </ul>
+                        </div>
+                        <div class="solutions__item-buttons">
+                            <button class="btn btn--bd btn--wall">Подробнее</button>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <div class="cardinfo shadow-2xl">
+                    <div class="cardinfo__title">Готовы начать цифровую трансформацию?</div>
+                    <div class="cardinfo__intro"><b>Получите персональную консультацию и план внедрения для вашего бизнеса</b></div>
+                    <div class="cardinfo__buttons">
+                        <button class="btn btn--md btn--bd btn--white btn--wall" data-scroll="contacts">Получить консультацию</button>
+                    </div>
+                </div>
+            </div>	
+        </section><!--  -->
+
+        
+        <section class="rates section__pd" id="rates">
+            <div class="container">	
+                <div class="section__head text--center">
+                    <h2 class="section__title">Честные тарифы без переплат</h2>
+                    <div class="section__intro mt--md">Выберите план или рассчитайте экономию для вашей компании</div>
+                </div>
+
+                <div class="rates__props">
+                    <div class="rates__prop">
+                        <div class="rates__prop-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  aria-hidden="true"><line x1="19" x2="5" y1="5" y2="19"></line><circle cx="6.5" cy="6.5" r="2.5"></circle><circle cx="17.5" cy="17.5" r="2.5"></circle></svg></div>
+                        <div class="rates__prop-t">Цена документа от 5 копеек*</div>
+                    </div>
+                    <div class="rates__prop">
+                        <div class="rates__prop-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 7h6v6"></path><path d="m22 7-8.5 8.5-5-5L2 17"></path></svg></div>
+                        <div class="rates__prop-t">Нашли дешевле? Сделаем еще выгоднее + подарок</div>
+                    </div>
+                    <div class="rates__prop">
+                        <div class="rates__prop-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="8" width="18" height="4" rx="1"></rect><path d="M12 8v13"></path><path d="M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7"></path><path d="M7.5 8a2.5 2.5 0 0 1 0-5A4.8 8 0 0 1 12 8a4.8 8 0 0 1 4.5-5 2.5 2.5 0 0 1 0 5"></path></svg></div>
+                        <div class="rates__prop-t">Переход от другого оператора = 3 месяца бесплатно</div>
+                    </div>
+                </div>
+
+                <div class="rates__calc backdrop-blur-sm shadow-xl js-calc">
+                    <div class="rates__calc-head">
+                        <div class="rates__calc-hicon shadow-md"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  aria-hidden="true"><rect width="16" height="20" x="4" y="2" rx="2"></rect><line x1="8" x2="16" y1="6" y2="6"></line><line x1="16" x2="16" y1="14" y2="18"></line><path d="M16 10h.01"></path><path d="M12 10h.01"></path><path d="M8 10h.01"></path><path d="M12 14h.01"></path><path d="M8 14h.01"></path><path d="M12 18h.01"></path><path d="M8 18h.01"></path></svg></div>
+                        <div class="rates__calc-title">Рассчитайте вашу экономию</div>
+                    </div>
+
+                    <div class="rates__calc-rcols">
+                        <div class="rates__calc-item js-calc-item">
+                            <div class="rates__calc-item__label">Документов в месяц: <span class="text-accent js-calc-item-val">50</span></div>
+                            <div class="js-calc-range" data-min="50" data-max="2000" data-start="500" data-step="50"></div>
+                            <input type="hidden" name="count_docs" value="50" class="js-calc-item-input">
+                        </div>
+                        <div class="rates__calc-item js-calc-item">
+                            <div class="rates__calc-item__label">Сотрудников: <span class="text-accent js-calc-item-val">5</span></div>
+                            <div class="js-calc-range" data-min="5" data-max="200" data-start="25" data-step="5"></div>
+                            <input type="hidden" name="count_empl" value="5" class="js-calc-item-input">
+                        </div>
+                    </div>
+
+                    <div class="rates__calc-bottom">
+                        <div class="rates__calc-bitem"></div>
+                        <div class="rates__calc-bitem">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock h-6 w-6 text-primary mx-auto mb-2" aria-hidden="true"><path d="M12 6v6l4 2"></path><circle cx="12" cy="12" r="10"></circle></svg>
+                            <div class="rates__calc-bitem__val"><span class="js-calc-result">167</span> ч</div>
+                            <div class="rates__calc-bitem__label">времени в месяц</div>
+                        </div>
+                        <div class="rates__calc-bitem"></div>
+                    </div>
+                </div>
+
+                <div class="rates__items">
+                    <div class="rates__item">
+                        <div class="rates__item-icon"><img src="@img/icons/lighting.svg" alt=""></div>
+                        <div class="rates__item-title">Стартер</div>
+                        <div class="rates__item-intro">Для знакомства с системой</div>
+                        <div class="rates__item-price">Бесплатно</div>
+                        <div class="rates__item-list">
+                            <ul>
+                                <li>50 документов в месяц</li>
+                                <li>Базовый ЭДО</li>
+                                <li>Email поддержка</li>
+                                <li>Мобильное приложение</li>
+                            </ul>
+                        </div>
+                        <div class="rates__item-buttons">
+                            <button class="btn btn--bd btn--wall">Начать бесплатно</button>
+                        </div>
+                    </div>
+                    <div class="rates__item item--scale">
+                        <div class="rates__item-tag">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star h-3 w-3 mr-1" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg>
+                            <span>Хит продаж</span>
+                        </div>
+                        <div class="rates__item-sale">-40%</div>
+                        <div class="rates__item-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-building h-6 w-6 text-white" aria-hidden="true"><rect width="16" height="20" x="4" y="2" rx="2" ry="2"></rect><path d="M9 22v-4h6v4"></path><path d="M8 6h.01"></path><path d="M16 6h.01"></path><path d="M12 6h.01"></path><path d="M12 10h.01"></path><path d="M12 14h.01"></path><path d="M16 10h.01"></path><path d="M16 14h.01"></path><path d="M8 10h.01"></path><path d="M8 14h.01"></path></svg></div>
+                        <div class="rates__item-title">Бизнес</div>
+                        <div class="rates__item-intro">Для растущих компаний</div>
+                        <div class="rates__item-price">
+                            <div class="rates__item-price__old">25</div>
+                            <span>от 15<span class="rates__item-price__label">руб/мес</span></span>
+                        </div>
+                        <div class="rates__item-list">
+                            <ul>
+                                <li>1000 документов в месяц</li>
+                                <li>Полный функционал ЭДО</li>
+                                <li>Модуль Клиент-Бухгалтер</li>
+                                <li>Приоритетная поддержка</li>
+                                <li>Аналитика и отчеты</li>
+                            </ul>
+                        </div>
+                        <div class="rates__item-buttons">
+                            <button class="btn btn--wall"><span>Выбрать план</span><img src="@img/icons/arrow.svg" alt=""></button>
+                        </div>
+                    </div>
+                    <div class="rates__item">
+                        <div class="rates__item-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-crown h-6 w-6 text-white" aria-hidden="true"><path d="M11.562 3.266a.5.5 0 0 1 .876 0L15.39 8.87a1 1 0 0 0 1.516.294L21.183 5.5a.5.5 0 0 1 .798.519l-2.834 10.246a1 1 0 0 1-.956.734H5.81a1 1 0 0 1-.957-.734L2.02 6.02a.5.5 0 0 1 .798-.519l4.276 3.664a1 1 0 0 0 1.516-.294z"></path><path d="M5 21h14"></path></svg></div>
+                        <div class="rates__item-title">Энтерпрайз</div>
+                        <div class="rates__item-intro">Для крупных организаций</div>
+                        <div class="rates__item-price">Индивидуально</div>
+                        <div class="rates__item-list">
+                            <ul>
+                                <li>Безлимит документов</li>
+                                <li>Персональный менеджер</li>
+                                <li>SLA 99.9%</li>
+                                <li>Кастомная разработка</li>
+                                <li>Обучение команды</li>
+                            </ul>
+                        </div>
+                        <div class="rates__item-buttons">
+                            <button class="btn btn--bd btn--wall">Получить расчет</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rates__blocks">
+                    <div class="rates__block">
+                        <div class="rates__block-head">
+                            <div class="rates__block-hicon"><img src="@img/icons/check.svg" alt=""></div>
+                            <div class="rates__block-title">Наши гарантии</div>
+                        </div>
+                        <div class="rates__block-list">
+                            <ul>
+                                <li>Без скрытых платежей и комиссий</li>
+                                <li>30 дней возврата средств</li>
+                                <li>Бесплатная миграция данных</li>
+                                <li>Обучение команды включено</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="rates__block bg">
+                        <div class="rates__block-head">
+                            <div class="rates__block-hicon"><img src="@img/icons/gift.svg" alt=""></div>
+                            <div class="rates__block-title">Специальное предложение</div>
+                        </div>
+                        <div class="rates__block-item">
+                            <div class="rates__block-item__title">🎁 Переход от другого оператора</div>
+                            <div class="rates__block-item__text">Получите 3 месяца бесплатного обслуживания при переходе</div>
+                        </div>
+                        <div class="rates__block-item">
+                            <div class="rates__block-item__title">💰 Нашли дешевле?</div>
+                            <div class="rates__block-item__text">Сделаем еще выгоднее + подарок от МетаЭра</div>
+                        </div>
+                        <div class="rates__block-buttons">
+                           <button class="btn btn--bd btn--white btn--wall">Узнать подробности</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rates__btext">
+                    <p>* Цена документа рассчитывается от базового тарифа и зависит от объема. Минимальная стоимость обработки одного документа составляет 5 копеек при тарифе "Бизнес" и объеме свыше 1000 документов в месяц.</p>
+                    <p>Все цены указаны в белорусских рублях без НДС. Предложение о ценовой гарантии действует при предоставлении официального коммерческого предложения конкурента с аналогичным функционалом.</p>
+                </div>
+            </div>	
+        </section><!--  -->
+
+        
+        <section class="audit section__pd" id="audit">
+            <div class="container">	
+                <div class="section__head text--center">
+                    <div class="section__tag mb--md">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search h-5 w-5 mr-3 text-accent" aria-hidden="true"><path d="m21 21-4.34-4.34"></path><circle cx="11" cy="11" r="8"></circle></svg>
+                        <span>Бесплатный аудит</span>
+                    </div>
+                    <h2 class="section__title">Узнайте потенциал вашей системы</h2>
+                    <div class="section__intro mt--md">Получите детальный анализ вашей цифровой инфраструктуры и персональные рекомендации по оптимизации процессов</div>
+                </div>
+
+                <div class="audit__cols">
+                    <div class="audit__left">
+                        <div class="audit__included">
+                            <div class="audit__included-title">Что входит в аудит цифровой инфраструктуры?</div>
+                            <div class="audit__included-items">
+                                <div class="audit__included-item">
+                                    <div class="audit__included-item__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  aria-hidden="true"><path d="M16 7h6v6"></path><path d="m22 7-8.5 8.5-5-5L2 17"></path></svg></div>
+                                    <div class="audit__included-item__info">
+                                        <div class="audit__included-item__title">Анализ эффективности</div>
+                                        <div class="audit__included-item__text">Оценка текущих процессов и выявление узких мест</div>
+                                    </div>
+                                </div>
+                                <div class="audit__included-item">
+                                    <div class="audit__included-item__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg></div>
+                                    <div class="audit__included-item__info">
+                                        <div class="audit__included-item__title">Потенциал роста</div>
+                                        <div class="audit__included-item__text">Расчет возможной экономии времени и ресурсов</div>
+                                    </div>
+                                </div>
+                                <div class="audit__included-item">
+                                    <div class="audit__included-item__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  aria-hidden="true"><path d="M3 3v16a2 2 0 0 0 2 2h16"></path><path d="M18 17V9"></path><path d="M13 17V5"></path><path d="M8 17v-3"></path></svg></div>
+                                    <div class="audit__included-item__info">
+                                        <div class="audit__included-item__title">Персональные рекомендации</div>
+                                        <div class="audit__included-item__text">Индивидуальный план оптимизации для вашего бизнеса</div>
+                                    </div>
+                                </div>
+                                <div class="audit__included-item">
+                                    <div class="audit__included-item__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path></svg></div>
+                                    <div class="audit__included-item__info">
+                                        <div class="audit__included-item__title">Оценка безопасности</div>
+                                        <div class="audit__included-item__text">Проверка соответствия требованиям безопасности</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="audit__results shadow-lg">
+                            <div class="audit__results-title">Результаты наших клиентов после аудита</div>
+                            <div class="audit__results-items">
+                                <div class="audit__results-item">
+                                    <div class="audit__results-item__val">73%</div>
+                                    <div class="audit__results-item__text">сокращение времени на документооборот</div>
+                                </div>
+                                <div class="audit__results-item">
+                                    <div class="audit__results-item__val">2.8x</div>
+                                    <div class="audit__results-item__text">увеличение эффективности процессов</div>
+                                </div>
+                                <div class="audit__results-item">
+                                    <div class="audit__results-item__val">85%</div>
+                                    <div class="audit__results-item__text">клиентов внедряют наши решения</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="audit__right">
+                        <div class="audit__going backdrop-blur-sm shadow-xl">
+                            <div class="audit__going-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-text h-10 w-10 text-white" aria-hidden="true"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path><path d="M14 2v4a2 2 0 0 0 2 2h4"></path><path d="M10 9H8"></path><path d="M16 13H8"></path><path d="M16 17H8"></path></svg></div>
+                            <div class="audit__going-title">Как проходит аудит</div>
+                            <div class="audit__going-intro">Простой процесс из 4 этапов</div>
+
+                            <div class="audit__going-item">
+                                <div class="audit__going-item__top">
+                                    <div class="audit__going-item__title">Заполнение анкеты</div>
+                                    <div class="audit__going-item__time">10 минут</div>
+                                </div>
+                                <div class="audit__going-item__text">Детальная информация о вашей системе 1С и требованиях к ЭДО</div>
+                            </div>
+                            <div class="audit__going-item">
+                                <div class="audit__going-item__top">
+                                    <div class="audit__going-item__title">Техническая консультация</div>
+                                    <div class="audit__going-item__time">30 минут</div>
+                                </div>
+                                <div class="audit__going-item__text">Онлайн встреча с экспертом для уточнения деталей</div>
+                            </div>
+                            <div class="audit__going-item">
+                                <div class="audit__going-item__top">
+                                    <div class="audit__going-item__title">Подготовка отчета</div>
+                                    <div class="audit__going-item__time">2-3 дня</div>
+                                </div>
+                                <div class="audit__going-item__text">Анализ вашей инфраструктуры и разработка рекомендаций</div>
+                            </div>
+                            <div class="audit__going-item">
+                                <div class="audit__going-item__top">
+                                    <div class="audit__going-item__title">Презентация результатов</div>
+                                    <div class="audit__going-item__time">1 час</div>
+                                </div>
+                                <div class="audit__going-item__text">Подробный отчет с планом внедрения и расчетом ROI</div>
+                            </div>
+                        </div>
+
+                                
+                        <div class="cardinfo shadow-2xl mt--md pd--md">
+                            <div class="cardinfo__title fs--md">Готовы узнать потенциал вашей системы?</div>
+                            <div class="cardinfo__intro mt--sm">Заполните анкету и получите бесплатный аудит с персональными рекомендациями</div>
+                            <div class="cardinfo__buttons mt--md">
+                                <button class="btn btn--md btn--bd btn--white">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-text mr-3 h-6 w-6" aria-hidden="true"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path><path d="M14 2v4a2 2 0 0 0 2 2h4"></path><path d="M10 9H8"></path><path d="M16 13H8"></path><path d="M16 17H8"></path></svg>
+                                    <span>Заполнить анкету</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right ml-3 h-6 w-6 transition-transform" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                                </button>
+                                <div class="cardinfo__buttons-label">⚡ Заполнение займет всего 10 минут</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="audit__guarant backdrop-blur-sm shadow-lg">
+                    <div class="audit__guarant-title">Гарантии качества аудита</div>
+                    <div class="audit__guarant-list">
+                        <ul>
+                            <li>Бесплатно и без обязательств</li>
+                            <li>Конфиденциальность данных</li>
+                            <li>Экспертная оценка за 3 дня</li>
+                            <li>Персональные рекомендации</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>	
+        </section><!--  -->
+
+        
+        <section class="partners section__mg" id="partners">
+            <div class="container">	
+                <div class="section__head text--center">
+                    <h2 class="section__title">Наши надежные партнеры</h2>
+                    <div class="section__intro mt--md">Мы сотрудничаем с ведущими компаниями, чтобы предоставить вам комплексные решения для бизнеса</div>
+                </div>
+
+                <div class="partners__slider">
+                    <div class="swiper js-partners-slider shadow-2xl backdrop-blur-sm">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide partners__item">
+                                <div class="partners__item-logo"><img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODgiIGhlaWdodD0iODgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgc3Ryb2tlPSIjMDAwIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBvcGFjaXR5PSIuMyIgZmlsbD0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIzLjciPjxyZWN0IHg9IjE2IiB5PSIxNiIgd2lkdGg9IjU2IiBoZWlnaHQ9IjU2IiByeD0iNiIvPjxwYXRoIGQ9Im0xNiA1OCAxNi0xOCAzMiAzMiIvPjxjaXJjbGUgY3g9IjUzIiBjeT0iMzUiIHI9IjciLz48L3N2Zz4KCg==" alt=""></div>
+                                <div class="partners__item-title">Hoster.by</div>
+                                <div class="partners__item-desc">Надежный хостинг и домены для вашего бизнеса</div>
+                                <div class="partners__item-tag">Хостинг и домены</div>
+                                <div class="partners__item-buttons">
+                                    <a href="https://hoster.by/" class="btn" target="_blank"><span>Перейти на сайт</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link ml-2 h-5 w-5" aria-hidden="true"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg></a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide partners__item">
+                                <div class="partners__item-logo"><img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODgiIGhlaWdodD0iODgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgc3Ryb2tlPSIjMDAwIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBvcGFjaXR5PSIuMyIgZmlsbD0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIzLjciPjxyZWN0IHg9IjE2IiB5PSIxNiIgd2lkdGg9IjU2IiBoZWlnaHQ9IjU2IiByeD0iNiIvPjxwYXRoIGQ9Im0xNiA1OCAxNi0xOCAzMiAzMiIvPjxjaXJjbGUgY3g9IjUzIiBjeT0iMzUiIHI9IjciLz48L3N2Zz4KCg==" alt=""></div>
+                                <div class="partners__item-title">Приорбанк</div>
+                                <div class="partners__item-desc">Банковские услуги и эквайринг для бизнеса</div>
+                                <div class="partners__item-tag">Банковские услуги</div>
+                                <div class="partners__item-buttons">
+                                    <a href="https://www.priorbank.by/" class="btn" target="_blank"><span>Перейти на сайт</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link ml-2 h-5 w-5" aria-hidden="true"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg></a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide partners__item">
+                                <div class="partners__item-logo"><img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODgiIGhlaWdodD0iODgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgc3Ryb2tlPSIjMDAwIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBvcGFjaXR5PSIuMyIgZmlsbD0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIzLjciPjxyZWN0IHg9IjE2IiB5PSIxNiIgd2lkdGg9IjU2IiBoZWlnaHQ9IjU2IiByeD0iNiIvPjxwYXRoIGQ9Im0xNiA1OCAxNi0xOCAzMiAzMiIvPjxjaXJjbGUgY3g9IjUzIiBjeT0iMzUiIHI9IjciLz48L3N2Zz4KCg==" alt=""></div>
+                                <div class="partners__item-title">Беларусбанк</div>
+                                <div class="partners__item-desc">Корпоративное банковское обслуживание</div>
+                                <div class="partners__item-tag">Банковские услуги</div>
+                                <div class="partners__item-buttons">
+                                    <a href="https://belarusbank.by/" class="btn" target="_blank"><span>Перейти на сайт</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link ml-2 h-5 w-5" aria-hidden="true"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg></a>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="swiper-button swiper-button-prev"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"></path></svg></button>
+                        <button class="swiper-button swiper-button-next"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg></button>
+                    </div>
+                    <div class="swiper-pagination js-partners-slider-pagination"></div>
+                </div>
+                
+                <div class="section__head mb--md text--center mt">
+                    <h2 class="section__title fs--md">Преимущества партнерства с МетаЭра</h2>
+                    <div class="section__intro mt--md fs--md">Станьте частью нашей экосистемы и развивайте бизнес вместе с нами</div>
+                </div>
+                <div class="partners__advants">
+                    <div class="partners__advant backdrop-blur-sm shadow-xl">
+                        <div class="partners__advant-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><path d="M16 3.128a4 4 0 0 1 0 7.744"></path><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><circle cx="9" cy="7" r="4"></circle></svg>
+                        </div>
+                        <div class="partners__advant-title">Взаимная реферальная программа</div>
+                        <div class="partners__advant-intro">Получайте комиссию за каждого приведенного клиента</div>
+                    </div>
+                    <div class="partners__advant backdrop-blur-sm shadow-xl">
+                        <div class="partners__advant-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trending-up h-8 w-8 text-white" aria-hidden="true"><path d="M16 7h6v6"></path><path d="m22 7-8.5 8.5-5-5L2 17"></path></svg>
+                        </div>
+                        <div class="partners__advant-title">Совместные продажи</div>
+                        <div class="partners__advant-intro">Увеличьте доходы за счет комплексных решений</div>
+                    </div>
+                    <div class="partners__advant backdrop-blur-sm shadow-xl">
+                        <div class="partners__advant-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  aria-hidden="true"><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"></path><circle cx="12" cy="8" r="6"></circle></svg>
+                        </div>
+                        <div class="partners__advant-title">Технические интеграции</div>
+                        <div class="partners__advant-intro">API интеграции для бесшовного взаимодействия</div>
+                    </div>
+                    <div class="partners__advant backdrop-blur-sm shadow-xl">
+                        <div class="partners__advant-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  aria-hidden="true"><path d="m11 17 2 2a1 1 0 1 0 3-3"></path><path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4"></path><path d="m21 3 1 11h-2"></path><path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3"></path><path d="M3 4h8"></path></svg>
+                        </div>
+                        <div class="partners__advant-title">Маркетинговая поддержка</div>
+                        <div class="partners__advant-intro">Совместные маркетинговые кампании и мероприятия</div>
+                    </div>
+                </div>
+                
+                
+                <div class="cardinfo shadow-2xl pd--lg w--md">
+                    <div class="cardinfo__title fs--lg">Готовы стать нашим партнером?</div>
+                    <div class="cardinfo__intro fs--md"><b>Присоединяйтесь к нашей партнерской программе и откройте новые возможности для развития вашего бизнеса</b></div>
+                    <div class="cardinfo__buttons">
+                        <button class="btn btn--md  btn--white btn--wall">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-handshake mr-3 h-6 w-6" aria-hidden="true"><path d="m11 17 2 2a1 1 0 1 0 3-3"></path><path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4"></path><path d="m21 3 1 11h-2"></path><path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3"></path><path d="M3 4h8"></path></svg>
+                            <span>Стать партнером</span>
+                        </button>
+                    </div>
+                </div>
+            </div>	
+        </section><!--  -->
+
+        
+        <section class="history section__mg js-tabs">
+            <div class="container">	
+                <div class="section__head text--center">
+                    <h2 class="section__title">Истории успеха наших клиентов</h2>
+                    <div class="section__intro">Реальные результаты компаний, которые доверили нам свою цифровую трансформацию</div>
+                </div>
+
+                <div class="history__nav">
+                    <button class="history__nav-btn active js-tabs-btn" data-tab="1"><span class="text-lg">🚀</span> ТехИнновации ООО</button>
+                    <button class="history__nav-btn js-tabs-btn" data-tab="2"><span class="text-lg">🏗️</span> СтройКомплекс</button>
+                    <button class="history__nav-btn js-tabs-btn" data-tab="3"><span class="text-lg">🏥</span> МедЦентр Здоровье</button>
+                </div>
+                
+                <div class="section__tab active js-tabs-content" data-tab="1">
+                    <div class="history__item shadow-2xl backdrop-blur-sm">
+                        <div class="history__item-info">
+                            <div class="history__item-head">
+                                <div class="history__item-title">🚀&nbsp; ТехИнновации ООО</div>
+                                <div class="history__item-tag">IT услуги</div>
+                            </div>
+                            <div class="history__item-row">
+                                <div class="history__item-label">Вызов:</div>
+                                Обработка 500+ документов в день занимала 8 часов
+                            </div>
+                            <div class="history__item-row">
+                                <div class="history__item-label">Решение:</div>
+                                Внедрили полный цикл ЭДО с автоматизацией маршрутов
+                            </div>
+                            <div class="history__item-quote">
+                                <div class="history__item-quote__text">"МетаЭра полностью изменила наш подход к документообороту. Теперь мы тратим минуты вместо часов."</div>
+                                <div class="history__item-quote__author">
+                                    <b>Анна Петрова</b> <br>  Директор по операциям
+                                </div>
+                            </div>
+                        </div>
+                        <div class="history__item-result">
+                            <div class="history__item-result__title">Результаты внедрения</div>
+                            <div class="history__item-result__row">
+                                <div class="history__item-result__label">Время обработки</div>
+                                <div class="history__item-result__val">-85%</div>
+                            </div>
+                            <div class="history__item-result__row">
+                                <div class="history__item-result__label">Ошибки в документах</div>
+                                <div class="history__item-result__val">-92%</div>
+                            </div>
+                            <div class="history__item-result__row">
+                                <div class="history__item-result__label">Экономия в месяц</div>
+                                <div class="history__item-result__val">180 000 ₽</div>
+                            </div>
+                            <div class="history__item-result__buttons">
+                                <button class="btn btn--md btn--white btn--wall" data-scroll="contacts">
+                                    <span>Получить подобный результат</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right ml-2 h-5 w-5" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="section__tab  js-tabs-content" data-tab="2">
+                    <div class="history__item shadow-2xl backdrop-blur-sm">
+                        <div class="history__item-info">
+                            <div class="history__item-head">
+                                <div class="history__item-title">🏗️&nbsp; СтройКомплекс</div>
+                                <div class="history__item-tag">Строительство</div>
+                            </div>
+                            <div class="history__item-row">
+                                <div class="history__item-label">Вызов:</div>
+                                Координация между 15 подрядчиками через email и WhatsApp
+                            </div>
+                            <div class="history__item-row">
+                                <div class="history__item-label">Решение:</div>
+                                Централизованная платформа с CRM и проектным управлением
+                            </div>
+                            <div class="history__item-quote">
+                                <div class="history__item-quote__text">"Наконец-то все участники проекта работают в едином пространстве. Это кардинально улучшило качество работы."</div>
+                                <div class="history__item-quote__author">
+                                    <b>Михаил Сидоров</b> <br>  Генеральный директор
+                                </div>
+                            </div>
+                        </div>
+                        <div class="history__item-result">
+                            <div class="history__item-result__title">Результаты внедрения</div>
+                            <div class="history__item-result__row">
+                                <div class="history__item-result__label">Скорость согласований</div>
+                                <div class="history__item-result__val">+200%</div>
+                            </div>
+                            <div class="history__item-result__row">
+                                <div class="history__item-result__label">Прозрачность проектов</div>
+                                <div class="history__item-result__val">+100%</div>
+                            </div>
+                            <div class="history__item-result__row">
+                                <div class="history__item-result__label">Удовлетворенность клиентов</div>
+                                <div class="history__item-result__val">9.8/10</div>
+                            </div>
+                            <div class="history__item-result__buttons">
+                                <button class="btn btn--md btn--white btn--wall" data-scroll="contacts">
+                                    <span>Получить подобный результат</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right ml-2 h-5 w-5" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="section__tab  js-tabs-content" data-tab="3">
+                    <div class="history__item shadow-2xl backdrop-blur-sm">
+                        <div class="history__item-info">
+                            <div class="history__item-head">
+                                <div class="history__item-title">🏥&nbsp; МедЦентр Здоровье</div>
+                                <div class="history__item-tag">Медицина</div>
+                            </div>
+                            <div class="history__item-row">
+                                <div class="history__item-label">Вызов:</div>
+                                Ведение карт пациентов в бумажном виде
+                            </div>
+                            <div class="history__item-row">
+                                <div class="history__item-label">Решение:</div>
+                                Электронные медкарты с интеграцией с медоборудованием
+                            </div>
+                            <div class="history__item-quote">
+                                <div class="history__item-quote__text">"Система позволила нам сосредоточиться на пациентах, а не на бумажной работе."</div>
+                                <div class="history__item-quote__author">
+                                    <b>Елена Васильева</b> <br>    Главный врач
+                                </div>
+                            </div>
+                        </div>
+                        <div class="history__item-result">
+                            <div class="history__item-result__title">Результаты внедрения</div>
+                            <div class="history__item-result__row">
+                                <div class="history__item-result__label">Время приема</div>
+                                <div class="history__item-result__val">-40%</div>
+                            </div>
+                            <div class="history__item-result__row">
+                                <div class="history__item-result__label">Точность диагностики</div>
+                                <div class="history__item-result__val">+25%</div>
+                            </div>
+                            <div class="history__item-result__row">
+                                <div class="history__item-result__label">Удовлетворенность пациентов</div>
+                                <div class="history__item-result__val">95%</div>
+                            </div>
+                            <div class="history__item-result__buttons">
+                                <button class="btn btn--md btn--white btn--wall" data-scroll="contacts">
+                                    <span>Получить подобный результат</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right ml-2 h-5 w-5" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>	
+        </section><!--  -->
+
+        
+        <section class="reviews section__mg" id="reviews">
+            <div class="container">	
+                <div class="section__head text--center">
+                    <h2 class="section__title">Что говорят наши клиенты</h2>
+                    <div class="section__intro mt--md">Более 500 компаний уже оценили качество наших решений</div>
+                </div>
+
+                <div class="reviews__items">
+                    <div class="reviews__item">
+                        <div class="reviews__item-rating rating">
+                            <span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span>
+                        </div>
+                        <div class="reviews__item-text">"Лучшее решение для ЭДО на рынке. Интуитивный интерфейс и отличная поддержка."</div>
+                        <div class="reviews__item-author">
+                            <b>Дмитрий К.</b> <br>
+                            Логистика Плюс
+                        </div>
+                    </div>
+                    <div class="reviews__item">
+                        <div class="reviews__item-rating rating">
+                            <span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span>
+                        </div>
+                        <div class="reviews__item-text">"За полгода работы ни разу не пожалели о выборе. Все работает стабильно и быстро."</div>
+                        <div class="reviews__item-author">
+                            <b>Ольга М.</b> <br>Консалтинг Групп
+                        </div>
+                    </div>
+                    <div class="reviews__item">
+                        <div class="reviews__item-rating rating">
+                            <span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span>
+                        </div>
+                        <div class="reviews__item-text">"Отличное соотношение цена-качество. Рекомендую всем партнерам."</div>
+                        <div class="reviews__item-author">
+                            <b>Александр Н.</b> <br>Производство XYZ
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="reviews__props">
+                    <div class="reviews__prop">
+                        <div class="reviews__prop-val">500+</div>
+                        <div class="reviews__prop-text">Довольных клиентов</div>
+                    </div>
+                    <div class="reviews__prop">
+                        <div class="reviews__prop-val">99.9%</div>
+                        <div class="reviews__prop-text">Время работы системы</div>
+                    </div>
+                    <div class="reviews__prop">
+                        <div class="reviews__prop-val">24/7</div>
+                        <div class="reviews__prop-text">Техническая поддержка</div>
+                    </div>
+                    <div class="reviews__prop">
+                        <div class="reviews__prop-val">4.9/5</div>
+                        <div class="reviews__prop-text">Рейтинг клиентов</div>
+                    </div>
+                </div>    
+            </div>	
+        </section><!--  -->
+
+        
+        <section class="contacts section__mg" id="contacts">
+            <div class="container">	
+                <div class="section__head text--center">
+                    <h2 class="section__title">Начните цифровую трансформацию уже сегодня</h2>
+                    <div class="section__intro">Получите персональную консультацию и узнайте, как наши решения помогут оптимизировать ваш бизнес</div>
+                </div>
+
+                <div class="contacts__cols">
+                    <div class="contacts__left">
+                        <div class="contacts__box">
+                            <div class="contacts__box-head">
+                                <div class="contacts__box-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big h-6 w-6 mr-3 text-accent" aria-hidden="true"><path d="M21.801 10A10 10 0 1 1 17 3.335"></path><path d="m9 11 3 3L22 4"></path></svg></div>
+                                <div class="contacts__box-title">Что вы получите</div>
+                            </div>
+                            <div class="contacts__box-list">
+                                <ul>
+                                    <li>Бесплатная консультация и аудит текущих процессов</li>
+                                    <li>Персональный план внедрения за 24 часа</li>
+                                    <li>Техническая поддержка на всех этапах внедрения</li>
+                                    <li>Обучение команды работе с системой</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="contacts__box contacts__item">
+                            <div class="contacts__item-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone h-6 w-6 text-white" aria-hidden="true"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path></svg></div>
+                            <div class="contacts__item-info">
+                                <div class="contacts__item-label">Телефон</div>
+                                <div class="contacts__item-val">+375 (29) 123-45-67</div>
+                                Звоните в рабочее время
+                            </div>                            
+                        </div>
+                        <div class="contacts__box contacts__item">
+                            <div class="contacts__item-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail h-6 w-6 text-white" aria-hidden="true"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path><rect x="2" y="4" width="20" height="16" rx="2"></rect></svg></div>
+                            <div class="contacts__item-info">
+                                <div class="contacts__item-label">Email</div>
+                                <div class="contacts__item-val">info@metaera.by</div>
+                                Ответим в течение часа
+                            </div>                            
+                        </div>
+                        <div class="contacts__box contacts__item">
+                            <div class="contacts__item-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin h-6 w-6 text-white" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg></div>
+                            <div class="contacts__item-info">
+                                <div class="contacts__item-label">Адрес</div>
+                                <div class="contacts__item-val">г. Минск, ул. Немига, 40</div>
+                                Офис открыт пн-пт 9:00-18:00
+                            </div>                            
+                        </div>
+                        <div class="contacts__box contacts__time">
+                            <div class="contacts__box-head mb--sm">
+                                <div class="contacts__box-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock h-6 w-6 mr-3 text-accent" aria-hidden="true"><path d="M12 6v6l4 2"></path><circle cx="12" cy="12" r="10"></circle></svg></div>
+                                <div class="contacts__box-title">Быстрый ответ</div>
+                            </div>
+                            Мы отвечаем на все обращения в течение 30 минут в рабочее время
+                        </div>
+                    </div>
+                    <div class="contacts__right contacts__box">
+                        <div class="contacts__form">
+                            <div class="contacts__form-head">
+                                <div class="contacts__form-title">Получить консультацию</div>
+                                <div class="contacts__form-intro">Заполните форму и мы свяжемся с вами в течение 30 минут</div>
+                            </div>
+                                        
+                            <form action="" method="post">
+                                <input name="controll" class="no-display" type="text">
+                                <input type="hidden" name="form" value="Получить консультацию">
+                                <input type="hidden" name="pagetitle" value="">
+                                
+                                <div class="form__cols">
+                                    <div class="form__row">
+                                        <div class="form__label">Ваше имя *</div>
+                                        <input type="text" name="name" class="input" placeholder="Иван Иванов">
+                                    </div>       
+                                    <div class="form__row">
+                                        <div class="form__label">Компания</div>
+                                        <input type="text" name="company" class="input" placeholder="ООО «Ваша компания»">
+                                    </div>        
+                                </div>    
+                                <div class="form__cols">
+                                    <div class="form__row">
+                                        <div class="form__label">Телефон *</div>
+                                        <input type="tel" name="name" class="input js-phone-mask" placeholder="+375 (29) 123-45-67">
+                                    </div>       
+                                    <div class="form__row">
+                                        <div class="form__label">Email *</div>
+                                        <input type="text" name="name" class="input" placeholder="ivan@company.by">
+                                    </div>        
+                                </div>     
+                                <div class="form__row">
+                                    <div class="form__label">Сообщение</div>
+                                    <textarea name="message" class="input" placeholder="Расскажите о ваших задачах и целях..."></textarea>
+                                </div>
+                                <div class="form__submit">
+                                    <button class="btn btn--md btn--wall" type="submit">
+                                        <span>Отправить заявку</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-send ml-3 h-5 w-5" aria-hidden="true"><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"></path><path d="m21.854 2.147-10.94 10.939"></path></svg>
+                                    </button>
+                                </div>
+                                <div class="form__policy">Нажимая кнопку, вы соглашаетесь с обработкой персональных данных</div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="cardinfo shadow-2xl pd--md w--md">
+                    <div class="cardinfo__title">Не готовы заполнять форму?</div>
+                    <div class="cardinfo__intro fs--md"><b>Позвоните нам прямо сейчас или напишите в мессенджер</b></div>
+                    <div class="cardinfo__buttons">
+                        <a href="tel:" class="btn btn--md  btn--white">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone mr-3 h-5 w-5" aria-hidden="true"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path></svg>
+                            <span>Позвонить сейчас</span>
+                        </a>
+                        <a href="tel:" class="btn btn--md  btn--white" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-send mr-3 h-5 w-5" aria-hidden="true"><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"></path><path d="m21.854 2.147-10.94 10.939"></path></svg>
+                            <span>Написать в Telegram</span>
+                        </a>
+                    </div>
+                </div>
+            </div>	
+        </section><!--  -->
+
+
+	</main><!--content__wrapper-->
+
+    @@include('html/footer.html', {})
+
+</div>
+
+@@include('html/popup.html', {})
+    
+</body>
+</html>

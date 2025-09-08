@@ -1,0 +1,151 @@
+@use "sass:math";
+
+.cols {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 0;
+    margin: 0 -10px;
+    width: auto;
+    &.al-center {
+        align-items: center;
+    }
+}
+[class*='col-'] {
+    flex: 0 0 auto;
+    padding: 0 10px;
+}
+	
+$grid-columns: 12;
+$grid-columns-md: 6;
+
+@for $i from 1 through $grid-columns {	  	
+    .col-#{$i} { 
+        width: 100%;		
+    }	
+}
+
+@for $i from 1 through $grid-columns {	  	
+  .mgl-#{$i} { 
+      margin-left: 0;		
+  }	
+}
+@for $i from 1 through $grid-columns {	  	
+  .mgr-#{$i} { 
+      margin-right: 0;		
+  }	
+}
+
+.col-mt {
+    margin-top: 20px;
+    &--sm {
+        margin-top: 10px;
+    }
+}
+
+@media (min-width: $md-tablet-sm + 0.02px) {
+	@for $i from 1 through $grid-columns-md {	 
+
+	  	.col-md-#{$i} { 
+	  		width: calc(100% / $grid-columns-md * $i);		
+	  	}	
+
+	}
+
+    @for $i from 1 through $grid-columns-md {	  	
+
+        .mgl-md-#{$i} { 
+            margin-left: calc(100% / $grid-columns-md * $i + 10px);		
+        }	
+
+    }
+    @for $i from 1 through $grid-columns-md {	  
+        .mgr-md-#{$i} { 
+            margin-right: calc( 100% / $grid-columns-md * $i + 10px);
+           	
+        }	
+    }
+
+  .col-mt {
+      margin-top: 30px;
+      &--sm {
+          margin-top: 20px;
+      }
+  }
+}
+@media (min-width: $md-tablet+ 0.02px) {
+	@for $i from 1 through $grid-columns {	  	
+
+	  	.col-#{$i} { 
+	  		width: calc(100% / $grid-columns * $i);		
+	  	}	
+
+	}
+
+    @for $i from 1 through $grid-columns {	  
+        .mgl-#{$i} { 
+            margin-left: calc( 100% / $grid-columns * $i + 10px);
+        }	
+        [class*='col-'].mgl-#{$i} { 
+            margin-left: calc( 100% / $grid-columns * $i + 0px);
+        }
+    }
+    @for $i from 1 through $grid-columns {	  
+        .mgr-#{$i} { 
+            margin-right: calc( 100% / $grid-columns * $i + 10px);
+           	
+        }	
+        [class*='col-'].mgr-#{$i} { 
+            margin-right: calc( 100% / $grid-columns * $i + 0px);
+           	
+        }	
+    }
+
+    .col-mt {
+        margin-top: 0px;
+    }
+}
+@media (min-width: $md-tablet+ 0.02px) and (max-width: $md-desktop-md) {
+	@for $i from 1 through $grid-columns {	  	
+
+	  	.col-mdx-#{$i} { 
+	  		width: calc(100% / $grid-columns * $i);		
+	  	}	
+
+	}
+
+    @for $i from 1 through $grid-columns {	  
+        .mgl-mdx-#{$i} { 
+            margin-left: calc( 100% / $grid-columns * $i + 10px);
+           	
+        }	
+    }
+    @for $i from 1 through $grid-columns {	  
+        .mgr-mdx-#{$i} { 
+            margin-right: calc( 100% / $grid-columns * $i + 10px);
+           	
+        }	
+    }
+}
+
+
+
+@media (max-width: $md-tablet) {
+    .cols {
+        margin: 0 -10px;
+    }
+    [class*='col-'] {
+        padding: 0 10px;
+    }
+}
+@media (max-width: $md-tablet-sm) {
+    .cols {
+        gap: 16px 0;
+        margin: 0 -8px;
+    }
+    [class*='col-'] {
+        padding: 0 8px;
+        & + & {
+            // margin-top: 16px;
+        }
+    }
+}

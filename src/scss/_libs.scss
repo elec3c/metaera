@@ -1,0 +1,96 @@
+/**************************************************************
+swiper
+**************************************************************/
+.swiper {
+
+}
+.swiper-slide {
+    height: auto;
+}
+.swiper-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  &-bullet {
+    margin: 0 !important;
+    width: 12px; height: 12px;
+    border: none;
+    background: $color-accent;
+    transition: all 0.3s ease-in-out;
+    opacity: 0.6;
+    &-active {
+      width: 15px; height: 15px;
+      opacity: 1;
+    }
+  }
+  &-clickable .swiper-pagination-bullet {
+    cursor: pointer;
+  }
+}
+.swiper-button {
+    width: 36px; height: 36px;
+    left: 16px;
+    transform: translateY(-50%);
+    border-radius: calc(var(--radius) - 2px);
+    background-color: #ffffffe6;
+    border: 2px solid color-mix(in oklab, var(--accent) 30%, transparent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    color: $color-accent;
+    transition: all 0.2s;
+    &-next {
+      left: auto;
+      right: 16px;
+    }
+    &:after {
+        display: none;
+    }
+    svg {
+      width: 16px; height: 16px;
+    }
+    @media (hover: hover) {
+      &:hover {
+        background-color: var(--accent-light);
+      }
+    }
+
+    &-nav {
+        position: relative;
+        display: flex;
+        align-items: center;
+        .swiper-pagination {
+          position: static;
+          width: auto;
+          margin: 0 -6px;
+        }
+    }
+}
+.swiper-scrollbar {
+  background: none ;
+}
+
+/**************************************************************
+.noUi
+**************************************************************/
+.noUi-target {
+  height: 16px;
+  background-color: var(--muted);
+  border-radius: 100px;
+}
+.noUi-connect {
+  background-color: var(--primary);
+}
+.noUi-horizontal .noUi-handle {
+  width: 16px; height: 16px;
+  border: 1px solid var(--primary);
+  top: 0;
+  right: -8px;
+  box-shadow: none;
+  &:hover {
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, oklab(0.708055 0.104443 0.130806 / 0.5) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.1) 0px 1px 2px -1px
+  }
+}

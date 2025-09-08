@@ -1,0 +1,156 @@
+.section {
+    &__head {
+        margin-bottom: 64px;
+        &.mt {
+            margin-top: 80px;
+        }
+        &.mb--md {
+            margin-bottom: 48px;
+        }
+        &.hcols {
+            display: flex;
+            justify-content: space-between;
+            gap: 40px;
+        }
+    }
+    &__tag {
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+        box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.1) 0px 2px 4px -2px;
+        background-color: var(--accent-light);
+        border-radius: 100px;
+        border: 1px solid color-mix(in oklab, var(--accent) 30%, transparent);
+        padding-inline: calc(var(--spacing) * 6);
+        height: 50px;
+        margin-bottom: 24px;
+        color: $color-accent;
+        font-weight: 600;
+        &.mb--md {
+            margin-bottom: 12px;
+        }
+        svg, img {
+            height: 24px;
+        }
+    }
+    &__title {
+        font-weight: 600;
+        font-size: $fs-5xl;
+        line-height: 1.3;
+        &.fs--md {
+            font-size: $fs-3xl;
+        }
+    }
+    &__intro {
+        font-size: $fs-xl;
+        margin-top: 24px;
+        max-width: 768px;
+        &.mt--md {
+            margin-top: 16px;
+        }
+        &.fs--md {
+            font-size: $fs-lg;
+        }
+        .text--center & {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    &__buttons {
+        margin-top: 68px;
+        text-align: center;
+    }
+    &__first {
+        margin-top: 0 !important;
+    }
+    &__mg {
+        margin: 80px 0;
+        &--md {
+          
+        }
+        &--sm {
+           
+        }
+    }
+    &__mgt {
+        &--sm {
+          
+        }
+    }
+    &__pd {
+        padding: 80px 0;
+    }
+    &__pdt {
+        padding-top: 70px;
+    }
+    &__tab {
+        display:none;
+        &.active {
+            display:block;
+        }
+    }
+    
+
+    @media (max-width: $md-tablet) {
+       
+        &__head {
+            
+            &.hcols {
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+        &__title {
+         
+            
+        }
+        &__buttons {
+           
+        }
+    }
+    @media (max-width: $md-tablet-sm) {
+     
+        &__head {
+           margin-bottom: 40px;
+        }
+        &__title {
+          font-size: $fs-4xl;            
+        }
+        &__intro {
+            font-size: $fs-base;
+            margin-top: 16px;
+        }
+        &__buttons {
+            
+        }
+        &__mg {
+            margin: 60px 0;
+        }
+        &__pd {
+            padding: 60px 0;
+        }
+    }
+    @media (max-width: $md-mobile) {
+          
+        &__title {
+            font-size: $fs-3xl;            
+          }
+    }
+}
+
+.title {
+    
+}
+.text {
+   
+}
+
+.text--center {
+    text-align: center;
+}
+.text--white {
+    color: #ffff;
+}
+.text-accent {
+    color: $color-accent;
+}

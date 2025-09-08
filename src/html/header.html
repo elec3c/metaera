@@ -1,0 +1,78 @@
+<header class="header">
+	<div class="container">	
+		<div class="header__inner">			
+			@@if (page === 'main'){
+				<div class="header__logo shadow-lg"><img src="@img/logo.png" alt=""></div>
+			}
+			@@if (page !== 'main'){
+				<a href="/" class="header__logo shadow-lg"><img src="@img/logo.png" alt=""></a>
+			}
+
+			<div class="header__nav shadow-lg backdrop-blur-sm">
+				<div class="header__nav-item">
+					<button class="header__nav-btn" data-scroll="top">Главная</button>
+				</div>
+				<div class="header__nav-item">
+					<button class="header__nav-btn" >Меню<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down h-4 w-4" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></button>
+					<div class="header__nav-list">
+						<ul>
+							<li><a href="" data-scroll="solutions">Услуги</a></li>
+							<li><a href="" data-scroll="rates">Тарифы</a></li>
+							<li><a href="" data-scroll="audit">Аудит</a></li>
+							<li><a href="" data-scroll="partners">Партнеры</a></li>
+							<li><a href="" data-scroll="history">Кейсы</a></li>
+							<li><a href="" data-scroll="reviews">Отзывы</a></li>
+							<li><a href="" data-scroll="contacts">Контакты</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="header__contacts">
+				<a href="tel:+375 (29) 123-45-67" class="header__phones shadow-md backdrop-blur-sm">
+					<div class="header__phones-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path></svg></div>
+					<div class="header__phones-info">
+						<div class="header__phones-label">Звонок</div>
+						<div class="header__phones-val">+375 (29) 123-45-67</div>
+					</div>
+				</a>
+				<button class="header__btn btn" data-scroll="contacts">Начать работу</button>
+
+				<button class="header__burger js-open-navfix">
+					<svg class="icon"><use xlink:href="@img/icons/sprite.svg#menu-burger"></use></svg>
+					<svg class="icon img-close"><use xlink:href="@img/icons/sprite.svg#menu-close"></use></svg>
+				</button>
+			</div>
+				
+
+			<div class="navfix shadow-xl backdrop-blur-sm js-navfix">
+				<div class="navfix__contacts">
+					<a href="tel:+375 (29) 123-45-67" class="navfix__phones">
+						<div class="navfix__phones-icon">
+							<svg class="icon"><use xlink:href="@img/icons/sprite.svg#phone"></use></svg>
+						</div>
+						<div class="navfix__phones-info">
+							<div class="navfix__phones-label">Звонок</div>
+							<div class="navfix__phones-val">+375 (29) 123-45-67</div>
+						</div>
+					</a>
+				</div>
+				<div class="navfix__menu">
+					<ul>
+						<li><a href="" data-scroll="top">Главная</a></li>
+						<li><a href="" data-scroll="solutions">Услуги</a></li>
+						<li><a href="" data-scroll="rates">Тарифы</a></li>
+						<li><a href="" data-scroll="audit">Аудит</a></li>
+						<li><a href="" data-scroll="partners">Партнеры</a></li>
+						<li><a href="" data-scroll="history">Кейсы</a></li>
+						<li><a href="" data-scroll="reviews">Отзывы</a></li>
+						<li><a href="" data-scroll="contacts">Контакты</a></li>
+					</ul>
+				</div>
+				<div class="navfix__buttons">					
+					<button class="btn btn--md btn--wall" data-scroll="contacts">Начать работу</button>
+				</div>
+			</div>
+		</div>
+	</div>	
+</header>
