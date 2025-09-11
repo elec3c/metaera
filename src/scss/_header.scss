@@ -15,17 +15,17 @@ header
         height: calc(var(--spacing) * 24);
     }
     &__logo {
-        background: #fff;
+        // background: #fff;
         display: flex;
         align-items: center;
         justify-content: center;
-        border: 2px solid color-mix(in oklab, var(--accent) 20%, transparent);
-        border-radius: 100%;
-        width: calc(var(--spacing) * 20);
-        height: calc(var(--spacing) * 20);
+        // border: 2px solid color-mix(in oklab, var(--accent) 20%, transparent);
+        // border-radius: 100%;
+        // width: calc(var(--spacing) * 20);
+        height: calc(var(--spacing) * 16);
         overflow: hidden;
         img {
-            
+            max-height: 100%;
         }
     }
     &__nav {
@@ -186,7 +186,7 @@ header
     }
     @media (max-width: $md-tablet-sm) {
         &__logo {
-            width: 60px; height: 60px;
+            height: 60px;
         }
         &__phones, &__btn {
             display: none
