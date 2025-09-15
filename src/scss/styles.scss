@@ -142,7 +142,7 @@
             gap: calc(var(--spacing) * 4);
         }
         &-prop {
-            animation: 4s ease-in-out infinite float;
+            // animation: 4s ease-in-out infinite float;
             padding: 16px;
             background-color: color-mix(in oklab, var(--color-white) 70%, transparent);
             border: 1px solid color-mix(in oklab, var(--accent-secondary) 30%, transparent);
