@@ -27,6 +27,7 @@
         min-width: 1px;
     }
     &__title {
+        color: var(--color-text-body);
         font-size: $fs-7xl;
         font-weight: 800;
         line-height: 1.25;
@@ -34,6 +35,7 @@
     &__advants {
         margin-top: 24px;
         min-width: 1px;
+        color: var(--color-text-body);
         &-item {
             font-size: $fs-xl;
             padding-left: 36px;
@@ -241,6 +243,7 @@
         gap: 16px;
     }
     &__rating {
+        color: var(--color-text-body);
         margin-top: 32px;
         display: flex;
         align-items: center;
@@ -906,6 +909,7 @@
             margin-bottom: 24px;
             font-size: $fs-2xl;
             font-weight: 600;
+            color: var(--color-text-body);
         }
         &-items {
             display: grid;
@@ -950,6 +954,7 @@
         padding: 32px;
         border-radius: var(--radius-2xl);
         text-align: center;
+        color: var(--color-text-body);
         &-title {
             margin-bottom: 24px;
             font-size: $fs-xl;

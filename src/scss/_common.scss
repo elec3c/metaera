@@ -65,6 +65,34 @@
         background-image: linear-gradient(to left top, oklab(0.313564 0.0107227 -0.0449701 / 0.05) 0%, rgba(0, 0, 0, 0) 50%, oklab(0.708055 0.104443 0.130806 / 0.08) 100%);
         content: '';
     }
+    &.bg {
+        background: #3e3d5c;
+        --color-text-body: #fff;
+        &::after, &::before {
+            display: none;
+        }
+        section {
+            background: none;
+            position: relative;
+            &::before {
+                position: absolute;
+                top: 50%; left: 100%;
+                transform: translate(-50%, -50%);
+                width:70vw; height: 50vw;
+                // background: rgba(255, 255, 255, 0.5);
+                // -webkit-backdrop-filter: blur(8px);
+                // backdrop-filter: blur(8px);
+                background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 60%);
+                border-radius: 100%;
+                content: '';
+                z-index: -1;
+            }
+            &:nth-child(2n)::before {
+                left: 0%;
+                // transform: translate();
+            }
+        }
+    }
 }
 
 
