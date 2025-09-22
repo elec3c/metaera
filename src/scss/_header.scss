@@ -27,7 +27,8 @@ header
             transition: all 0.3s ease-in-out;
             opacity: 0;
         }
-        .fixed &::after {
+        .fixed &::after,
+        .bg   &::after {
             opacity: 1;
         }
     }
